@@ -51,6 +51,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/bio-photo.png" : {
+      "ft" : 32768,
+      "iS" : 2810,
+      "oA" : 0,
+      "oAP" : "\/images\/bio-photo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/card-1.png" : {
       "ft" : 32768,
       "iS" : 281636,
@@ -155,12 +168,85 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/team-member.png" : {
+      "ft" : 32768,
+      "iS" : 2521709,
+      "oA" : 0,
+      "oAP" : "\/images\/team-member.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/thumbnail.png" : {
+      "ft" : 32768,
+      "iS" : 1358,
+      "oA" : 0,
+      "oAP" : "\/images\/thumbnail.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/work-banner.png" : {
+      "ft" : 32768,
+      "iS" : 2534351,
+      "oA" : 0,
+      "oAP" : "\/images\/work-banner.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/work-card-1.png" : {
+      "ft" : 32768,
+      "iS" : 1463097,
+      "oA" : 0,
+      "oAP" : "\/images\/work-card-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/work-card-2.png" : {
+      "ft" : 32768,
+      "iS" : 2090548,
+      "oA" : 0,
+      "oAP" : "\/images\/work-card-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index.html",
+      "oF" : 0
+    },
+    "\/our-work.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/our-work.html",
       "oF" : 0
     },
     "\/style.css" : {
@@ -189,6 +275,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/team-member.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/team-member.html",
+      "oF" : 0
+    },
+    "\/work-example.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work-example.html",
+      "oF" : 0
     }
   },
   "hooks" : [
