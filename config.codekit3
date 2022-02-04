@@ -155,6 +155,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/fws-thumb.png" : {
+      "ft" : 32768,
+      "iS" : 120560,
+      "oA" : 0,
+      "oAP" : "\/images\/fws-thumb.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/logo.png" : {
       "ft" : 32768,
       "iS" : 22341,
@@ -247,6 +260,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/our-work.html",
+      "oF" : 0
+    },
+    "\/partners.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/partners.html",
       "oF" : 0
     },
     "\/style.css" : {

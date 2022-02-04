@@ -133,7 +133,7 @@ li {
   max-height: 60px;
 }
 
-.navbar a {
+.nav-link  {
   font-family: $sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -148,8 +148,9 @@ li {
   border: 2px solid transparent;
 }
 
-.navbar a:hover {
+.nav-link:hover {
   background-color: rgba(0, 0, 0,.1);
+  color: $white;
   padding: 10px 40px;
   // color: rgba(255,255,255,.5);
   transition: ease-in 0.2s;
@@ -499,6 +500,136 @@ li {
 .work-example .second {
   background: rgba(232, 229, 221, 40%);
 }
+
+
+/* Single Work Suggestion */
+
+.work h5 {
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.work h5 a:hover {
+  color: $orange;
+  font-weight: 700;
+  transition: ease-in 0.325s;
+}
+
+.work .card {
+    background-color: $dark-green;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 0rem;
+    transition: ease-in 0.325s;
+}
+
+.work h3 {
+  font-family: $serif;
+  font-size: 23px;
+  font-weight: 300;
+  color: $white;
+  text-transform: none;
+}
+
+.work h6 {
+  font-size: 18px;
+  color: $white;
+}
+
+.card-text {
+  color: $white !important;
+  font-size: 16px;
+}
+
+.work  .card-body {
+  padding: 2.5rem !important;
+}
+
+.work  .card-img {
+  border-radius: 0px !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work .main-button {
+  border: 2px solid $white;
+  background: transparent;
+}
+
+.work .main-button:hover {
+  border: 2px solid $white;
+  background: $white;
+  color: $dark-orange;
+}
+
+/* --- Our Partners --- */
+
+.partners .card {
+    background-color: $dark-cream;
+    color: $dark-gray;
+    background-clip: border-box;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 6px solid $orange;
+    border-radius: 0rem;
+    transition: ease-in 0.325s;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+.partners h3 {
+  font-family: $sans-serif;
+  font-size: 18px;
+  line-height: 154%;
+  font-weight: 300;
+  color: $dark-gray;
+  text-transform: none;
+}
+
+.partners h6 {
+  color: $dark-gray;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.partners p {
+  color: $dark-gray !important;
+  font-size: 16px;
+  line-height: 154%
+}
+
+.partners .thumb {
+  background: $white;
+}
+
+.partners .card-text {
+  color: $dark-gray !important;
+}
+
+.partners  .card-body {
+  padding: 2.5rem !important;
+}
+
+// .partners  .card-img {
+//   border-radius: 0px !important;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   background: $white\;
+// }
+
+.partners .main-button {
+  border: 2px solid $dark-gray;
+  background: transparent;
+}
+
+.partners .main-button:hover {
+  border: 2px solid $white;
+  background: $white;
+  color: $dark-orange;
+}
+
 
 
 /* - footer */
