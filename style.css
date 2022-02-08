@@ -556,6 +556,43 @@ li {
   color: #9C775D;
 }
 
+/* --- Contact ---*/
+.contact h2 {
+  color: #828049;
+  font-weight: 400;
+}
+
+.contact h3 {
+  color: #5C5C5C;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contact label {
+  color: #5C5C5C;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact .form-control {
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.contact h4 {
+  color: #5C5C5C;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.contact ul {
+  line-height: 150%;
+}
+
 /* - footer */
 .footer {
   background: #333333;

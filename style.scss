@@ -630,6 +630,43 @@ li {
   color: $dark-orange;
 }
 
+/* --- Contact ---*/
+
+.contact h2 {
+  color: $dark-green;
+  font-weight: 400;
+}
+
+.contact h3 {
+  color: $gray;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contact label {
+  color: $gray;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact .form-control {
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.contact h4 {
+  color: $gray;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.contact ul {
+  line-height: 150%;
+}
 
 
 /* - footer */
