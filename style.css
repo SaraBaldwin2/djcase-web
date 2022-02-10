@@ -10,13 +10,13 @@ body, html {
 
 a {
   font-weight: 700;
-  color: #828049;
+  color: #5A5933;
   transition: ease-in 0.3s;
 }
 
 a:hover {
   font-weight: 700;
-  color: #D7A480;
+  color: #828049;
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ h4 {
 
 h5 {
   font-family: "tablet-gothic", sans-serif;
-  color: #828049;
+  color: #5A5933;
   font-size: 28px;
 }
 
@@ -136,60 +136,252 @@ li {
 
 /* - Buttons -*/
 .main-button {
-  font-family: "ff-avance-pro", serif;
+  font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  background: #828049;
-  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #5A5933;
   color: #ffffff;
   padding: 15px 25px;
   transition: ease-in 0.3s;
   border-radius: 0px;
-  border-bottom: 5px solid #B7B769;
-}
-
-.main-button {
-  color: #fffffff;
+  border-bottom: 5px solid #828049;
 }
 
 .main-button:hover {
   color: #ffffff;
+  font-weight: 400;
   background: #68663A;
   transition: ease-in 0.3s;
-  border-bottom: 5px solid #828049;
+  border-bottom: 5px solid #5A5933;
   text-decoration: none;
 }
 
 .alt-button {
-  color: #333333;
-  background: transparent;
   font-family: "tablet-gothic", sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: 900;
-  padding: 10px 0px;
+  background: #392D25;
+  color: #ffffff;
+  padding: 15px 25px;
   transition: ease-in 0.3s;
+  border-radius: 0px;
+  border-bottom: 5px solid #765A44;
 }
 
 .alt-button:hover {
-  color: #333333;
+  color: #ffffff;
+  font-weight: 400;
+  background: #261E19;
+  transition: ease-in 0.3s;
+  border-bottom: 5px solid #392D25;
+  text-decoration: none;
+}
+
+.light-button {
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #FFFCF3;
+  color: #765A44;
+  padding: 15px 25px;
+  transition: ease-in 0.3s;
+  border-radius: 0px;
+  border-bottom: 5px solid #D7A480;
+}
+
+.light-button:hover {
+  color: #ffffff;
+  font-weight: 400;
+  background: #D7A480;
+  transition: ease-in 0.3s;
+  border-bottom: 5px solid #ffffff;
   text-decoration: none;
 }
 
 /* --- Main Body ---- */
 .banner {
-  background: url(images/banner-example.jpg);
-  -webkit-background-size: cover;
+  background: url(images/banner-example.png);
+  background-size: cover;
+  min-height: 350px;
+  margin-top: -90px;
+}
+
+.interior-banner {
+  background: url(images/banner-example.png);
+  background-size: cover;
   min-height: 350px;
   margin-top: -90px;
 }
 
 .banner h1 {
   color: #ffffff;
-  margin-top: 90px;
   line-height: 71.55px;
   text-align: center;
+}
+
+.interior-hero-text {
+  margin-top: 130px;
+  text-align: center;
+}
+
+/* --- Home --- */
+.home .banner {
+  background: url(images/banner-home.jpg);
+  background-size: cover;
+  min-height: 80vh;
+}
+
+.home .banner h1 {
+  color: #ffffff;
+  line-height: 71.55px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.arrow {
+  display: block;
+  margin: auto;
+}
+
+.home .larger {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  padding-top: 320px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#prop img {
+  max-width: 370px;
+  margin-bottom: -250px;
+}
+
+#prop h2 {
+  font-family: "hellenic-wide-jf", serif;
+  font-size: 50px;
+  color: #544236;
+  font-weight: 400;
+}
+
+#prop p {
+  font-family: "ff-avance-pro", serif;
+  font-size: 18px;
+  line-height: 186%;
+}
+
+#prop .main-button {
+  max-width: 250px;
+}
+
+#home-partners {
+  background: #B7B769;
+}
+
+#home-partners img {
+  margin-bottom: 30px;
+}
+
+#home-partners .horizontal img {
+  max-width: 200px;
+}
+
+#home-partners .vertical img {
+  max-width: 125px;
+}
+
+#home-partners h3 {
+  font-size: 28px;
+  text-align: center;
+  text-transform: none;
+  font-family: "hellenic-wide-jf", serif;
+  color: #5A5933;
+  padding: 20px;
+  background: #B7B769;
+  max-width: 325px;
+  float: none;
+  margin: auto;
+}
+
+#home-partners .container {
+  border: 1px solid #5A5933;
+  margin-top: 35px;
+}
+
+#tools {
+  background: linear-gradient(123.29deg, #886750 19.27%, #C89975 61.6%);
+}
+
+#tools img {
+  max-width: 380px;
+  margin-bottom: -200px;
+}
+
+#tools h2 {
+  font-family: "hellenic-wide-jf", serif;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#tools p {
+  font-family: "ff-avance-pro", serif;
+  font-size: 18px;
+  line-height: 186%;
+  color: #ffffff;
+}
+
+#tools .main-button {
+  max-width: 250px;
+}
+
+#tools .alt-button {
+  max-width: 335px;
+}
+
+#practice-preach {
+  padding-top: 50px;
+  background: linear-gradient(0deg, rgba(71, 70, 40, 0.7), rgba(71, 70, 40, 0.7)), url(images/practice-preach-bg.jpg);
+  -webkit-background-size: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+#practice-preach h2 {
+  font-family: "hellenic-wide-jf", serif;
+  color: #ffffff;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#practice-preach p {
+  font-family: "ff-avance-pro", serif;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 166%;
+  text-align: center;
+}
+
+#practice-preach .light-button {
+  max-width: 195px;
+  display: block;
+  margin: auto;
+}
+
+.top {
+  font-size: 65px;
+}
+
+.bottom {
+  font-size: 45px;
 }
 
 /* - Case In Point Example - */
@@ -234,7 +426,7 @@ li {
 }
 
 .case-in-point .side .card {
-  background-color: #828049;
+  background-color: #5A5933;
   border: 0px solid rgba(0, 0, 0, 0) !important;
   border-bottom: 6px solid #B7B769 !important;
   border-radius: 0rem;
@@ -318,7 +510,7 @@ li {
 
 /* --- Our Work Main Page Example --- */
 .our-work .card {
-  background-color: #828049;
+  background-color: #5A5933;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 0rem;
@@ -368,12 +560,13 @@ li {
 .work-example .banner {
   background: url(images/work-banner.png);
   -webkit-background-size: cover;
+  background-size: cover;
   min-height: 350px;
   margin-top: -90px;
 }
 
 .work-example h3 {
-  color: #828049;
+  color: #5A5933;
   font-weight: 400;
   font-family: "tablet-gothic", sans-serif;
   font-size: 25px;
@@ -451,7 +644,7 @@ li {
 }
 
 .work .card {
-  background-color: #828049;
+  background-color: #5A5933;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 0rem;
@@ -558,7 +751,7 @@ li {
 
 /* --- Contact ---*/
 .contact h2 {
-  color: #828049;
+  color: #5A5933;
   font-weight: 400;
 }
 

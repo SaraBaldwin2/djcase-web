@@ -9,10 +9,14 @@ $dark-gray: #333333;
 $gray: #5C5C5C;
 $dark-orange: #9C775D;
 $orange: #D7A480;
-$dark-green: #828049;
+$med-green: #828049;
+$dark-green: #5A5933;
 $green: #B7B769;
 $cream: #FFFCF3;
 $dark-cream: #E8E5DD;
+$dark-brown: #261E19;
+$med-brown: #392D25;
+$brown: #765A44;
 
 $sans-serif: 'tablet-gothic', sans-serif;
 $serif: 'hellenic-wide-jf', serif;
@@ -35,7 +39,7 @@ a {
 
 a:hover {
   font-weight: 700;
-  color: $orange;
+  color: $med-green;
   text-decoration: none;
 
 }
@@ -176,24 +180,22 @@ li {
 /* - Buttons -*/
 
 .main-button {
-  font-family: $body-serif;
+  font-family: $sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   background: $dark-green;
-  font-weight: 900;
   color: #ffffff;
   padding: 15px 25px;
   transition: ease-in 0.3s;
   border-radius: 0px;
-  border-bottom: 5px solid $green;
-}
-
-.main-button {
-  color: #fffffff;
+  border-bottom: 5px solid $med-green;
 }
 
 .main-button:hover {
   color: $white;
+  font-weight: 400;
   background: #68663A;
   transition: ease-in 0.3s;
   border-bottom: 5px solid $dark-green;
@@ -201,39 +203,258 @@ li {
 }
 
 .alt-button {
-  color: $dark-gray;
-  background: transparent;
   font-family: $sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: 900;
-  padding: 10px 0px;
+  background: $med-brown;
+  color: #ffffff;
+  padding: 15px 25px;
   transition: ease-in 0.3s;
+  border-radius: 0px;
+  border-bottom: 5px solid $brown;
 }
 
 .alt-button:hover {
-  color: $dark-gray;
+  color: $white;
+  font-weight: 400;
+  background: $dark-brown;
+  transition: ease-in 0.3s;
+  border-bottom: 5px solid $med-brown;
   text-decoration: none;
 }
 
 
+.light-button {
+  font-family: $sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: $cream;
+  color: $brown;
+  padding: 15px 25px;
+  transition: ease-in 0.3s;
+  border-radius: 0px;
+  border-bottom: 5px solid $orange;
+}
+
+.light-button:hover {
+  color: $white;
+  font-weight: 400;
+  background: $orange;
+  transition: ease-in 0.3s;
+  border-bottom: 5px solid $white;
+  text-decoration: none;
+}
+
+
+
+
 /* --- Main Body ---- */
 
-
 .banner {
-  background: url(images/banner-example.jpg);
-  -webkit-background-size: cover;
+  background: url(images/banner-example.png);
+  background-size: cover;
+  min-height: 350px;
+  margin-top: -90px;
+}
+
+.interior-banner {
+  background: url(images/banner-example.png);
+  background-size: cover;
   min-height: 350px;
   margin-top: -90px;
 }
 
 .banner h1 {
   color: #ffffff;
-  margin-top: 90px;
+  // margin-top: 90px;
   line-height: 71.55px;
   text-align: center;
 }
+
+.interior-hero-text {
+  margin-top: 130px;
+  text-align: center;
+}
+
+
+/* --- Home --- */
+
+.home .banner {
+  background: url(images/banner-home.jpg);
+  background-size: cover;
+  min-height: 80vh;
+  // margin-top: -90px;
+}
+
+.hero-text {
+}
+
+.home .banner h1 {
+  color: #ffffff;
+  // margin-top: 400px;
+  line-height: 71.55px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.arrow {
+  // margin-top: 500px;
+  display: block;
+  margin: auto;
+}
+
+.home .larger {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+// .home h1 {
+//   line-height: 45px;
+//   margin-bottom: -200px;
+// }
+
+.hero-text {
+  padding-top: 320px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#prop img {
+  max-width: 370px;
+  margin-bottom: -250px;
+}
+
+#prop h2 {
+  font-family: $serif;
+  font-size: 50px;
+  color: #544236;
+  font-weight: 400;
+}
+
+#prop p {
+  font-family: $body-serif;
+  font-size: 18px;
+  line-height: 186%;
+}
+
+#prop .main-button {
+  max-width: 250px;
+}
+
+#home-partners {
+  background: $green;
+}
+
+#home-partners .container {
+    // max-height: 500px;
+}
+
+#home-partners img {
+  margin-bottom: 30px;
+}
+
+#home-partners .horizontal img {
+  max-width: 200px;
+}
+
+#home-partners .vertical img {
+  max-width: 125px;
+}
+
+#home-partners h3 {
+  font-size: 28px;
+  text-align: center;
+  text-transform: none;
+  font-family: $serif;
+  color: $dark-green;
+  padding: 20px;
+  background: $green;
+  max-width: 325px;
+  float: none;
+  margin: auto;
+}
+
+#home-partners .container {
+  border: 1px solid $dark-green;
+  margin-top: 35px;
+  // max-height: 400px;
+}
+
+#tools {
+  background: linear-gradient(123.29deg, #886750 19.27%, #C89975 61.6%);
+}
+
+#tools img {
+  max-width: 380px;
+  margin-bottom: -200px;
+}
+
+#tools h2 {
+  font-family: $serif;
+  font-size: 50px;
+  color: $white;
+  font-weight: 400;
+}
+
+#tools p {
+  font-family: $body-serif;
+  font-size: 18px;
+  line-height: 186%;
+  color: $white;
+}
+
+#tools .main-button {
+  max-width: 250px;
+}
+
+#tools .alt-button {
+  max-width: 335px;
+}
+
+#practice-preach {
+  // padding-top: 50px;
+  padding-top: 50px;
+  background: linear-gradient(0deg, rgba(71, 70, 40, 0.7), rgba(71, 70, 40, 0.7)), url(images/practice-preach-bg.jpg);
+  -webkit-background-size: cover;
+  background-position: center;
+  background-size:cover;
+}
+
+#practice-preach h2 {
+  font-family: $serif;
+  color: $white;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#practice-preach p {
+  font-family: $body-serif;
+  color: $white;
+  font-size: 22px;
+  line-height: 166%;
+  text-align: center;
+}
+
+#practice-preach .light-button {
+  max-width: 195px;
+  display: block;
+  margin: auto;
+}
+
+.top {
+  font-size: 65px;
+}
+
+.bottom {
+  font-size: 45px;
+}
+
+
 
 /* - Case In Point Example - */
 
@@ -267,7 +488,6 @@ li {
     border-radius: 0rem;
     transition: ease-in 0.3s;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-
 }
 
 .case-in-point  .card-body {
@@ -431,6 +651,7 @@ li {
 .work-example .banner {
   background: url(images/work-banner.png);
   -webkit-background-size: cover;
+  background-size: cover;
   min-height: 350px;
   margin-top: -90px;
 }
