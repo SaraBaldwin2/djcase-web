@@ -46,6 +46,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/banner-example.png" : {
+      "ft" : 32768,
+      "iS" : 1976616,
+      "oA" : 0,
+      "oAP" : "\/images\/banner-example.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/banner-home.jpg" : {
       "ft" : 16384,
       "iS" : 184157,
@@ -181,6 +194,19 @@
       "iS" : 92604,
       "oA" : 0,
       "oAP" : "\/images\/fws.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/header-distress.png" : {
+      "ft" : 32768,
+      "iS" : 56631,
+      "oA" : 0,
+      "oAP" : "\/images\/header-distress.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

@@ -1,6 +1,6 @@
 /* Style Guide Styles */
-/* - General Styles - */
-/* -- variables -- */
+/* -- Variables -- */
+/* -- General Styles -- */
 body, html {
   overflow-x: hidden;
   margin: 0;
@@ -10,14 +10,27 @@ body, html {
 
 a {
   font-weight: 700;
-  color: #5A5933;
+  color: #5A5933 !important;
   transition: ease-in 0.3s;
 }
 
 a:hover {
   font-weight: 700;
-  color: #828049;
+  color: #828049 !important;
   text-decoration: none;
+}
+
+a, a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+a:before, a:after, a > span:before, a > span:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
 }
 
 ul {
@@ -91,7 +104,7 @@ li {
   padding: 0px;
 }
 
-/* Navigation */
+/* -- Navigation -- */
 .navbar {
   background: transparent;
 }
@@ -100,6 +113,16 @@ li {
   height: 70px;
   position: relative;
   z-index: 2;
+}
+
+.navbar-toggler {
+  z-index: 1000;
+  border: 1px solid #FFFCF3;
+}
+
+.navbar-toggler-icon {
+  color: #FFFCF3 !important;
+  content: "Menu";
 }
 
 .navbar-nav {
@@ -121,12 +144,41 @@ li {
   border: 2px solid transparent;
 }
 
-.nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #ffffff;
+.nav-item a {
+  color: #FFFCF3 !important;
+  font-family: "tablet-gothic", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  margin: 0 10px;
   padding: 10px 40px;
-  transition: ease-in 0.2s;
-  border: 2px solid #ffffff;
+}
+
+.naveffect {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.naveffect:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #FFFCF3;
+  transform: translateX(-100%);
+}
+
+.naveffect:hover:before {
+  transform: translateX(0);
+}
+
+.naveffect {
+  color: #E8E5DD;
 }
 
 .navbar-nav > li {
@@ -134,7 +186,7 @@ li {
   padding-right: 10px;
 }
 
-/* - Buttons -*/
+/* -- Buttons -- */
 .main-button {
   font-family: "tablet-gothic", sans-serif;
   font-weight: 400;
@@ -142,7 +194,7 @@ li {
   letter-spacing: 1px;
   text-transform: uppercase;
   background: #5A5933;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 25px;
   transition: ease-in 0.3s;
   border-radius: 0px;
@@ -150,7 +202,7 @@ li {
 }
 
 .main-button:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 400;
   background: #68663A;
   transition: ease-in 0.3s;
@@ -165,7 +217,7 @@ li {
   letter-spacing: 1px;
   text-transform: uppercase;
   background: #392D25;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 25px;
   transition: ease-in 0.3s;
   border-radius: 0px;
@@ -173,7 +225,7 @@ li {
 }
 
 .alt-button:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 400;
   background: #261E19;
   transition: ease-in 0.3s;
@@ -196,7 +248,7 @@ li {
 }
 
 .light-button:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 400;
   background: #D7A480;
   transition: ease-in 0.3s;
@@ -209,7 +261,6 @@ li {
   background: url(images/banner-example.png);
   background-size: cover;
   min-height: 350px;
-  margin-top: -90px;
 }
 
 .interior-banner {
@@ -230,23 +281,29 @@ li {
   text-align: center;
 }
 
-/* --- Home --- */
+/* -- Home -- */
 .home .banner {
-  background: url(images/banner-home.jpg);
+  background: url(images/header-distress.png) no-repeat center bottom, url(images/banner-home.jpg);
   background-size: cover;
   min-height: 80vh;
 }
 
 .home .banner h1 {
   color: #ffffff;
-  line-height: 71.55px;
+  line-height: 50px;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .arrow {
-  display: block;
-  margin: auto;
+  top: auto;
+  bottom: 170px;
+  width: 23px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 19;
+  margin: 0px auto;
 }
 
 .home .larger {
@@ -255,8 +312,11 @@ li {
 }
 
 .hero-text {
-  padding-top: 320px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.hero-text h1 {
+  margin-top: 250px;
 }
 
 #prop img {
@@ -384,7 +444,7 @@ li {
   font-size: 45px;
 }
 
-/* - Case In Point Example - */
+/* -- Case In Point -- */
 .case-in-point h6 {
   color: #5C5C5C;
   font-weight: 700;

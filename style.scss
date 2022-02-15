@@ -1,8 +1,7 @@
 
 /* Style Guide Styles */
-/* - General Styles - */
 
-/* -- variables -- */
+/* -- Variables -- */
 
 $white: #ffffff;
 $dark-gray: #333333;
@@ -22,6 +21,7 @@ $sans-serif: 'tablet-gothic', sans-serif;
 $serif: 'hellenic-wide-jf', serif;
 $body-serif: 'ff-avance-pro', serif;
 
+/* -- General Styles -- */
 
 body, html {
   overflow-x:
@@ -32,23 +32,33 @@ body, html {
 
 a {
   font-weight: 700;
-  color: $dark-green;
+  color: $dark-green !important;
   transition: ease-in 0.3s;
-
 }
 
 a:hover {
   font-weight: 700;
-  color: $med-green;
+  color: $med-green !important;
   text-decoration: none;
+}
 
+a, a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+a:before, a:after, a > span:before, a > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
 }
 
 ul {
   list-style-type: none;
   line-height: 180%;
   padding-inline-start: 0px;
-
 }
 
 /* - Typography -*/
@@ -113,14 +123,11 @@ li {
   font-size: 16px;
 }
 
-
-
-
 .container-fluid {
   padding: 0px;
 }
 
-/* Navigation */
+/* -- Navigation -- */
 
 .navbar {
   background: transparent;
@@ -131,6 +138,16 @@ li {
   height: 70px;
   position: relative;
   z-index: 2;
+}
+
+.navbar-toggler {
+  z-index: 1000;
+  border: 1px solid $cream;
+}
+
+.navbar-toggler-icon {
+  color: $cream !important;
+  content: "Menu";
 }
 
 .navbar-nav {
@@ -152,32 +169,49 @@ li {
   border: 2px solid transparent;
 }
 
-.nav-link:hover {
-  background-color: rgba(0, 0, 0,.1);
-  color: $white;
+.nav-item a {
+  color: $cream !important;
+  font-family: $sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  margin: 0 10px;
   padding: 10px 40px;
-  // color: rgba(255,255,255,.5);
-  transition: ease-in 0.2s;
-  border: 2px solid $white;
 }
 
-// .navbar-default .navbar-nav>.active>a,
-// .navbar-default .navbar-nav>.active>a:hover,
-// .navbar-default .navbar-nav>.active>a:focus {
-//   color: $white;
-//   border: 2px solid $white;
-//   transition: ease-in 0.2s;
-// }
+.naveffect {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
 
+.naveffect:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: $cream;
+  transform: translateX(-100%);
+}
 
+.naveffect:hover:before {
+  transform: translateX(0);
+}
+
+.naveffect {
+  color: $dark-cream;
+}
 
 .navbar-nav > li{
   padding-left:10px;
   padding-right:10px;
 }
 
-
-/* - Buttons -*/
+/* -- Buttons -- */
 
 .main-button {
   font-family: $sans-serif;
@@ -186,7 +220,7 @@ li {
   letter-spacing: 1px;
   text-transform: uppercase;
   background: $dark-green;
-  color: #ffffff;
+  color: $white !important;
   padding: 15px 25px;
   transition: ease-in 0.3s;
   border-radius: 0px;
@@ -194,7 +228,7 @@ li {
 }
 
 .main-button:hover {
-  color: $white;
+  color: $white !important;
   font-weight: 400;
   background: #68663A;
   transition: ease-in 0.3s;
@@ -209,7 +243,7 @@ li {
   letter-spacing: 1px;
   text-transform: uppercase;
   background: $med-brown;
-  color: #ffffff;
+  color: $white !important;
   padding: 15px 25px;
   transition: ease-in 0.3s;
   border-radius: 0px;
@@ -217,14 +251,13 @@ li {
 }
 
 .alt-button:hover {
-  color: $white;
+  color: $white !important;
   font-weight: 400;
   background: $dark-brown;
   transition: ease-in 0.3s;
   border-bottom: 5px solid $med-brown;
   text-decoration: none;
 }
-
 
 .light-button {
   font-family: $sans-serif;
@@ -241,7 +274,7 @@ li {
 }
 
 .light-button:hover {
-  color: $white;
+  color: $white !important;
   font-weight: 400;
   background: $orange;
   transition: ease-in 0.3s;
@@ -249,16 +282,13 @@ li {
   text-decoration: none;
 }
 
-
-
-
 /* --- Main Body ---- */
 
 .banner {
   background: url(images/banner-example.png);
   background-size: cover;
   min-height: 350px;
-  margin-top: -90px;
+  // margin-top: -90px;
 }
 
 .interior-banner {
@@ -280,31 +310,42 @@ li {
   text-align: center;
 }
 
-
-/* --- Home --- */
+/* -- Home -- */
 
 .home .banner {
-  background: url(images/banner-home.jpg);
+  background: url(images/header-distress.png) no-repeat center bottom, url(images/banner-home.jpg);
   background-size: cover;
   min-height: 80vh;
-  // margin-top: -90px;
 }
 
-.hero-text {
-}
+// #example1 {
+//   background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+// }
+//
+// z-index: 10;
+// background: url(/themes/djcase_com/images/header-distress.png) no-repeat center bottom;
+// -webkit-background-size: cover;
+// -moz-background-size: cover;
+// -o-background-size: cover;
+// background-size: cover;
 
 .home .banner h1 {
   color: #ffffff;
   // margin-top: 400px;
-  line-height: 71.55px;
+  line-height: 50px;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .arrow {
-  // margin-top: 500px;
-  display: block;
-  margin: auto;
+  top: auto;
+  bottom: 170px;
+  width: 23px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 19;
+  margin: 0px auto;
 }
 
 .home .larger {
@@ -312,16 +353,13 @@ li {
   text-transform: uppercase;
 }
 
-// .home h1 {
-//   line-height: 45px;
-//   margin-bottom: -200px;
-// }
-
 .hero-text {
-  padding-top: 320px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 5px 10px rgb(0 0 0 / 90%);
 }
 
+.hero-text h1 {
+  margin-top: 250px;
+}
 
 #prop img {
   max-width: 370px;
@@ -418,7 +456,8 @@ li {
 #practice-preach {
   // padding-top: 50px;
   padding-top: 50px;
-  background: linear-gradient(0deg, rgba(71, 70, 40, 0.7), rgba(71, 70, 40, 0.7)), url(images/practice-preach-bg.jpg);
+  background: linear-gradient(0deg, rgba(71, 70, 40, 0.7), rgba(71, 70, 40, 0.7)),
+  url(images/practice-preach-bg.jpg);
   -webkit-background-size: cover;
   background-position: center;
   background-size:cover;
@@ -454,12 +493,8 @@ li {
   font-size: 45px;
 }
 
+/* -- Case In Point -- */
 
-
-/* - Case In Point Example - */
-
-.case-in-point {
-}
 
 .case-in-point h6 {
     color: $gray;
