@@ -283,9 +283,9 @@ li {
 
 /* -- Home -- */
 .home .banner {
-  background: url(images/header-distress.png) no-repeat center bottom, url(images/banner-home.jpg);
+  background: url(images/header-distress.png) no-repeat center bottom, url(images/banner-home.jpg) no-repeat top;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .home .banner h1 {
@@ -297,15 +297,33 @@ li {
 
 .arrow {
   top: auto;
-  bottom: 170px;
   width: 23px;
   position: absolute;
   left: 0;
   right: 0;
   z-index: 19;
   margin: 0px auto;
+  animation: arrow 5s infinite;
+  filter: drop-shadow(2px 2px 2px #333333);
 }
 
+@keyframes arrow {
+  0% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
 .home .larger {
   font-size: 55px;
   text-transform: uppercase;
