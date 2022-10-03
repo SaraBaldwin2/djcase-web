@@ -282,17 +282,27 @@ li {
 }
 
 /* -- Home -- */
-.home .banner {
-  background: url(images/header-distress.png) no-repeat center bottom, url(images/banner-home.jpg) no-repeat top;
+.home-banner {
+  background: url(images/banner-home.jpg) no-repeat top;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 117vh;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
 
-.home .banner h1 {
+.home-banner:before {
+  content: "";
+  background: url(images/header-distress.png);
+  height: 120%;
+  width: 120%;
+  opacity: 100%;
+  position: absolute;
+  animation: texture 6s infinite;
+}
+
+.home-banner h1 {
   color: #ffffff;
   line-height: 50px;
   text-align: center;
@@ -324,7 +334,6 @@ li {
   right: 0;
   z-index: 19;
   margin: 0px auto;
-  animation: arrow 6s infinite;
   filter: drop-shadow(2px 2px 2px #333333);
 }
 
@@ -356,6 +365,15 @@ li {
 
 .hero-text h1 {
   margin-top: 250px;
+}
+
+#prop:before {
+  content: "";
+  background: url(images/texture-divider.png) top no-repeat;
+  height: 40px;
+  margin-top: -40px;
+  opacity: 100%;
+  position: absolute;
 }
 
 #prop img {
